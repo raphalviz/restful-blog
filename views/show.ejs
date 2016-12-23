@@ -6,6 +6,10 @@
         <h1><%= blog.title %></h1>
         <span id="date"><%= blog.created.toDateString() %></span>
         <p><%- blog.body %></p>
+        <a class="btn waves-effect waves-light orange lighten-1" href="/blogs/<%= blog._id %>/edit">Edit</a>
+        <form action="/blogs/<%= blog._id %>?_method=DELETE" method="POST" id="delete">
+            <button class="btn waves-effect waves-light red lighten-1">Delete</button>
+        </form>
     </div>
 </div>
 <% include ./partials/footer %>

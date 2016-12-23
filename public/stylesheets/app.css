@@ -10,3 +10,7 @@
 #date {
     color: darkgray;
 }
+
+#delete {
+    display: inline;
+}
