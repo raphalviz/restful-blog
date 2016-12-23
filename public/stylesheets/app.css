@@ -1,0 +1,12 @@
+.container.main {
+    padding-top: 3.0em
+}
+
+.card-panel {
+    width: 75%;
+    margin: auto;
+}
+
+#date {
+    color: darkgray;
+}

@@ -1,0 +1,24 @@
+<% include ./partials/header %>
+<div class="main container">
+    <div class="card-panel">
+        <div>
+            New Blog
+        </div>
+        <form action="/blogs" method="POST">
+            <div class="input-field">
+                <label>Title</label>
+                <input type="text" name="blog[title]">
+            </div>
+            <div class="input-field">
+                <label>Image URL</label>
+                <input type="text" name="blog[image]">
+            </div>
+            <div class="input-field">
+                <label>Body</label>
+                <textarea class="materialize-textarea" name="blog[body]"></textarea>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+<% include ./partials/footer %>

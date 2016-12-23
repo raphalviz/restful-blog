@@ -1,0 +1,11 @@
+<% include ./partials/header %>
+<div class="main container">
+    <div class="card-panel">
+        <img class="responsive-img center" src="<%=blog.image%>">  
+        <br>
+        <h1><%= blog.title %></h1>
+        <span id="date"><%= blog.created.toDateString() %></span>
+        <p><%- blog.body %></p>
+    </div>
+</div>
+<% include ./partials/footer %>
